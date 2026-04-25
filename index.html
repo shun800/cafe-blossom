@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Blossom（カフェ ブロッサム） | 地元商店街の温かいカフェ</title>
+    
+    <!-- 初心者向け補足: Google Fontsから「Klee One」という手書き風の温かみのあるフォントを読み込んでいます -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSSファイルの読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ヘッダー（ページ上部のナビゲーション） -->
+    <header class="header">
+        <div class="header-inner">
+            <!-- 店舗ロゴ（テキストと絵に描いたような桜のアイコン） -->
+            <h1 class="logo">
+                <a href="#">
+                    <!-- 絵に描いたような桜のアイコン -->
+                    <svg width="28" height="28" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px; margin-bottom: 4px;">
+                        <!-- 花びら -->
+                        <path d="M32 12C28 2 15 8 20 22C6 14 0 25 10 32C0 39 6 50 20 42C15 56 28 62 32 52C36 62 49 56 44 42C58 50 64 39 54 32C64 25 58 14 44 22C49 8 36 2 32 12Z" fill="#ffb7c5" stroke="#ff8da1" stroke-width="2" stroke-linejoin="round"/>
+                        <!-- 花芯 -->
+                        <circle cx="32" cy="32" r="6" fill="#fff" stroke="#ff8da1" stroke-width="2"/>
+                        <!-- おしべ -->
+                        <path d="M32 26V18M32 38V46M26 32H18M46 32H38M28 28L22 22M36 36L42 42M28 36L22 42M36 28L42 22" stroke="#ff8da1" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Cafe Blossom
+                </a>
+            </h1>
+            <!-- ナビゲーションメニュー -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#menu">メニュー</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- メインビジュアル（トップの画像エリア） -->
+        <section class="hero">
+            <div class="hero-image">
+                <!-- カフェの雰囲気の画像（Unsplashの無料画像を使用） -->
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1920&h=1080" alt="Cafe Blossomの店内">
+            </div>
+            <div class="hero-text">
+                <h2>ホッと一息つける、<br>あなたのための場所</h2>
+            </div>
+        </section>
+
+        <!-- コンセプト紹介 -->
+        <section class="concept section">
+            <div class="container">
+                <h2 class="section-title">Concept</h2>
+                <div class="concept-content">
+                    <p>
+                        花が咲くように、あなたの日常に小さな幸せを。<br>
+                        こだわりのコーヒーと手作りスイーツで、ほっと一息つける場所でありたい。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- おすすめメニュー（4品） -->
+        <section id="menu" class="menu section">
+            <div class="container">
+                <h2 class="section-title">Recommended Menu</h2>
+                <div class="menu-grid">
+                    <!-- メニューアイテム1 -->
+                    <article class="menu-item">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1553177595-4de2bb0842b9?auto=format&fit=crop&q=80&w=600&h=600" alt="ストロベリーラテ">
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">ストロベリーラテ</h3>
+                            <p class="menu-desc">国産いちごを使った甘酸っぱい人気No.1ドリンク</p>
+                            <p class="menu-price">¥650</p>
+                        </div>
+                    </article>
+
+                    <!-- メニューアイテム2 -->
+                    <article class="menu-item">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?auto=format&fit=crop&q=80&w=600&h=600" alt="季節のフルーツタルト">
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">季節のフルーツタルト</h3>
+                            <p class="menu-desc">旬のフルーツをたっぷり乗せた自家製タルト</p>
+                            <p class="menu-price">¥580</p>
+                        </div>
+                    </article>
+
+                    <!-- メニューアイテム3 -->
+                    <article class="menu-item">
+                        <div class="menu-img">
+                            <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=600" alt="ブロッサムブレンド">
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">ブロッサムブレンド</h3>
+                            <p class="menu-desc">毎日飲みたくなるやさしい味わいのオリジナルコーヒー</p>
+                            <p class="menu-price">¥500</p>
+                        </div>
+                    </article>
+
+                    <!-- メニューアイテム4 -->
+                    <article class="menu-item">
+                        <div class="menu-img">
+                            <img src="./matcha_canele.png" alt="抹茶カヌレ">
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-name">抹茶カヌレ</h3>
+                            <p class="menu-desc">外はカリッと中はもっちり、和テイストのこだわりスイーツ</p>
+                            <p class="menu-price">¥420</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 店舗情報とアクセス（Googleマップ埋め込み） -->
+        <section id="access" class="info-access section">
+            <div class="container">
+                <div class="info-access-inner">
+                    <!-- 店舗情報 -->
+                    <div class="shop-info">
+                        <h2 class="section-title">Store Info</h2>
+                        <dl class="info-list">
+                            <dt>店舗名</dt>
+                            <dd>Cafe Blossom（カフェ ブロッサム）</dd>
+                            <dt>住所</dt>
+                            <dd>〒000-0000<br>東京都〇〇区〇〇商店街 1-2-3</dd>
+                            <dt>営業時間</dt>
+                            <dd>10:00 〜 19:00</dd>
+                            <dt>定休日</dt>
+                            <dd>毎週火曜日・水曜日</dd>
+                        </dl>
+                    </div>
+                    <!-- アクセス（Google Maps） -->
+                    <div class="shop-map">
+                        <h2 class="section-title">Access</h2>
+                        <div class="map-wrapper">
+                            <!-- 初心者向け補足: iframeは他のウェブサイト（ここではGoogle Map）をページに埋め込むためのタグです -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303808788!2d139.7670516152588!3d35.68123620000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2sTokyo%20Station!5e0!3m2!1sen!2sjp!4v1684820844439!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-sns">
+                <a href="#" aria-label="Instagram">
+                    <!-- SVGは画像の一種で、拡大しても画質が落ちないのが特徴です -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2026 Cafe Blossom. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
